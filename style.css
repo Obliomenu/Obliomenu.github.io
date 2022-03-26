@@ -62,8 +62,11 @@ p{
     display: table;
 }
 .cs_bar {
+    background-color: var(--cs_grey);
+    border: 2px solid var(--cs_red);
     height: 100%;
-    padding-right: 20px;
+    padding: 0 20px;
+    border-radius: 10px;
     float: right;
     color: var(--cs_red);
     font-size: 3rem;
