@@ -56,6 +56,11 @@ p{
     right: 0;
     z-index: 1000;
 }
+#menu_list::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 .cs_bar {
     height: 100%;
     padding-right: 20px;
@@ -64,7 +69,7 @@ p{
     font-size: 3rem;
 }
 .hamburger-menu {
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: 0;
     right: 0;
@@ -85,7 +90,7 @@ p{
     }
 }
 .cs_active{
-    display: block;
+    visibility: visible;
 }
 .hamburger-menu ul {
     display: flex;
