@@ -10,9 +10,6 @@ body{
     background-color: var(--cs_grey);
     color: var(--cs_black);
 }
-a:hover{
-    color: var(--cs_red);
-}
 .cs_text_grey{
     color: var(--cs_grey);
 }
@@ -33,6 +30,7 @@ section{
     padding: 2.5rem 0;
     line-height: 1.5rem;
 }
+/* Definizione Font */
 h1{
     font-size: 2rem;
     font-weight: 900;
@@ -40,6 +38,9 @@ h1{
 p{
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+}
+.cs_font_2{
+    font-size: 1.2rem;
 }
 .cs_description{
     font-size: 1.1rem;
@@ -55,19 +56,15 @@ p{
     top: 0;
     right: 0;
     z-index: 1000;
-}
-#menu_list::after{
-    content: "";
-    clear: both;
-    display: table;
+    text-align: end;
 }
 .cs_bar {
+    display: inline-block;
     background-color: var(--cs_grey);
     border: 2px solid var(--cs_red);
     height: 100%;
     padding: 0 20px;
     border-radius: 10px;
-    float: right;
     color: var(--cs_red);
     font-size: 3rem;
 }
@@ -96,12 +93,10 @@ p{
     visibility: visible;
 }
 .hamburger-menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+    text-align: start;
 }
 .hamburger-menu ul li a {
     color: var(--cs_red);
@@ -109,40 +104,44 @@ p{
     font-size: 1.5rem;
 }
 .close {
-    display: block;
     position: absolute;
     right: 15px;
     top: 0;
     color: var(--cs_red);
     font-size: 3rem;
-    text-decoration: none;
 }
 /* logo page */
 #cs_first{
     position: relative;
-    background: linear-gradient(90deg, rgba(157,25,23) 50%, rgb(223 223 223) 50%);
+    background: linear-gradient(90deg, rgb(223 223 223) 50%,  rgba(157,25,23) 50%);
     height: 100vh;
 }
-#cs_first .cs_menu{
+#cs_first h1{
     position: absolute;
     bottom: 140px;
     right: -100px;
     -ms-transform: rotate(270deg); 
     transform: rotate(270deg);
-}
-#cs_first h1{
+    margin: 0;
     font-size: 10rem;
 }
 .img_wrapper{
-    margin: auto;
-    max-width: 760px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+}
+.img_wrapper img{
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #drink{
     background: rgb(223 223 223);
     background: linear-gradient(90deg, rgb(223 223 223) 50%, rgba(157,25,23) 50%);
 }
-#cocktail h1{
-    font-size: 2rem;
+#cocktail .title{
     background: -webkit-linear-gradient(90deg, black 50%, rgba(157,25,23) 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
