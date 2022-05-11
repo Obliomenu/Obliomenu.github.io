@@ -126,12 +126,11 @@ p{
     font-size: 9rem;
 }
 .img_wrapper{
-    width: 50%;
     position: absolute;
     bottom: 0;
 }
 .img_wrapper img{
-    width: 30vh;
+    width: 200px;
     position: absolute;
     bottom: 0;
     left: 50%;
