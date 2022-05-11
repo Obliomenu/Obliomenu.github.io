@@ -123,14 +123,14 @@ p{
     -ms-transform: rotate(270deg); 
     transform: rotate(270deg);
     margin: 0;
-    font-size: 9rem;
+    font-size: 8rem;
 }
 .img_wrapper{
     position: absolute;
     bottom: 0;
 }
 .img_wrapper img{
-    width: 200px;
+    width: 180px;
     position: absolute;
     bottom: 0;
     left: 50%;
